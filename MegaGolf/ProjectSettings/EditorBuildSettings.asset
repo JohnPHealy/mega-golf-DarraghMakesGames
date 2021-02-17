@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/TestGolf.unity
-    guid: be2ebc8b254d5a34bb09e59d579c943a
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 007537db82e126e46b0da185ebff5c97
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/TempleScene.unity
     guid: 54fab7d0fa5c7e348aaa7b615b7da892
   m_configObjects: {}
