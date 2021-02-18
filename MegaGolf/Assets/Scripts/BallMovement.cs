@@ -77,4 +77,15 @@ public class BallMovement : MonoBehaviour
 
         return position;
     }
+
+        public void EnterMud()
+    {
+        shotPower = 0.3f;
+    }
+
+        public void ExitMud()
+    {
+        shotPower = 5;
+    }
+
 }
