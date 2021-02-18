@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: 007537db82e126e46b0da185ebff5c97
   - enabled: 1
+    path: Assets/Scenes/HengeScene.unity
+    guid: dec596c193d556e438dd5351df4ac051
+  - enabled: 1
+    path: Assets/Scenes/CausewayScene.unity
+    guid: c6e645d87f6d2d04b8998fa61719e8b0
+  - enabled: 1
     path: Assets/Scenes/TempleScene.unity
     guid: 54fab7d0fa5c7e348aaa7b615b7da892
   m_configObjects: {}
