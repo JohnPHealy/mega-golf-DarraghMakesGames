@@ -10,7 +10,9 @@ public class BenchFallTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        collidedBench.Invoke();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            collidedBench.Invoke();
+        }
     }
-
 }

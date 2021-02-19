@@ -8,6 +8,10 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private LineRenderer myLR;
     [SerializeField] private UnityEvent<string> shotTaken;
 
+    //public AudioSource audioSource;
+    //public AudioClip clip;
+    //public float volume = 0.5f;
+
     private Rigidbody myRB;
     private float shotForce;
     private Vector3 startPos, endPos, direction;
@@ -46,6 +50,7 @@ public class BallMovement : MonoBehaviour
             myLR.gameObject.SetActive(false);
             strokes++;
             shotTaken.Invoke(strokes.ToString());
+            //audioSource.PlayOneShot(clip, volume);
         }
     }
 
@@ -57,6 +62,7 @@ public class BallMovement : MonoBehaviour
             direction = new Vector3(direction.x, 0f, direction.z);
             myRB.AddForce(Vector3.Normalize(direction) * shotForce * shotPower, ForceMode.Impulse);
             startPos = endPos = Vector3.zero;
+ 
         }
 
         if (myRB.IsSleeping())
