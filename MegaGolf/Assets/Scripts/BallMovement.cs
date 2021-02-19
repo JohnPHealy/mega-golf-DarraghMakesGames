@@ -54,6 +54,7 @@ public class BallMovement : MonoBehaviour
         if (!canShoot)
         {
             direction = startPos - endPos;
+            direction = new Vector3(direction.x, 0f, direction.z);
             myRB.AddForce(Vector3.Normalize(direction) * shotForce * shotPower, ForceMode.Impulse);
             startPos = endPos = Vector3.zero;
         }
@@ -81,6 +82,7 @@ public class BallMovement : MonoBehaviour
         public void EnterMud()
     {
         shotPower = 0.3f;
+        myRB.velocity = myRB.velocity * shotPower;
     }
 
         public void ExitMud()
